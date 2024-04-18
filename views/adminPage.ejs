@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>the egyptian blood bank</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">blood group</th>
+                <th scope="col">quantity</th>
+                <th scope="col">test result</th>
+                <th scope="col">modify</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% ListItems.forEach(function(item,index){ %>
+            <tr>
+                
+                    <form action="/admin" method="post">
+                        <th>
+                            <input type="hidden" value="<%= item._id %>" name="_id" />
+                            <input type="hidden" value="<%= item.donar %>" name="user_id" />
+                            <%= index %>
+                        </th>
+                        <td>
+                            <%= item.bloodGroup %>
+                        </td>
+                        <td>
+                            <%= item.quantity %>
+                        </td>
+                        <td>
+                            <%= item.testDone%>
+                        </td>
+                        <td>
+                            <div class="form-check">
+                                <input onChange="this.form.submit()" class="form-check-input" value="postive" type="radio" name="test" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  postive
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input onChange="this.form.submit()" class="form-check-input" value="negative" type="radio" name="test" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                 negative
+                                </label>
+                              </div>
+                        </td>
+                        
+                    </form>
+
+
+                   
+                       
+            </tr>
+            <% }) %>
+
+        </tbody>
+    </table>
+
+
+</body>
+
+</html>

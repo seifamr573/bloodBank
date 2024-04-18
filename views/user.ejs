@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>the egyptian blood bank</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <section class="h-100 gradient-form" style="background-color: #eee;">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-xl-10">
+          <div class="card rounded-3 text-black">
+            <div class="row g-0">
+              <div class="col-lg-6">
+                <div class="card-body p-md-5 mx-md-4">
+
+                  <div class="text-center">
+                    <img
+                      src="https://health.gov.tt/sites/default/files/styles/large/public/inline-images/Blood%20Bank%20logo%202022-03.png?itok=0H-a6QNb"
+                      style="width: 185px;" alt="logo">
+                    <h4 class="mt-1 mb-5 pb-1">the Egyptian blood bank</h4>
+                    <h3 class="mt-1 mb-5 pb-1">registretion form</h3>
+                  </div>
+
+                  <form action="/user" method="post">
+
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <div class="form-check">
+                        <input value="hospital" class="form-check-input" type="radio" name="role"
+                          id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          hospital
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input value="user" class="form-check-input" type="radio" name="role" id="flexRadioDefault2"
+                          checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          user
+                        </label>
+                      </div>
+                    </div>
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <label class="form-label" for="form2Example22">National id</label>
+                      <input name="nationalId" type="text" minlength="14" maxlength="14" id="form2Example22"
+                        class="form-control" />
+                      
+                    </div>
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <label class="form-label" for="form2Example22">name</label>
+                      <input name="name" type="text" id="form2Example22" class="form-control" />
+                      
+                    </div>
+
+
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <label class="form-label" for="form2Example11">Email</label>
+                      <input name="email" type="email" id="form2Example11" class="form-control"
+                        placeholder="Phone number or email address" />
+                      
+                    </div>
+
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <label class="form-label" for="form2Example22">Password</label>
+                      <input name="password" type="password" id="form2Example22" class="form-control" />
+                      
+                    </div>
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <label class="form-label" for="form2Example22">city</label>
+                      <br />
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" value="cairo" type="radio" name="city" id="inlineRadio1"
+                          value="option1">
+                        <label class="form-check-label" for="inlineRadio1">cairo</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" value="alexandria" type="radio" name="city" id="inlineRadio2"
+                          value="option2">
+                        <label class="form-check-label" for="inlineRadio2">alexandria</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" value="aswan" type="radio" name="city" id="inlineRadio2"
+                          value="option2">
+                        <label class="form-check-label" for="inlineRadio2">aswan</label>
+                      </div>
+                      
+
+                    </div>
+
+                    <div class="text-center pt-1 mb-5 pb-1">
+                      <button data-mdb-button-init data-mdb-ripple-init
+                        class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit">Register</button>
+
+                    </div>
+
+
+
+                  </form>
+
+                </div>
+              </div>
+              <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                  <h2 class="mb-4">Be someone's lifeline; donate blood</h2>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
